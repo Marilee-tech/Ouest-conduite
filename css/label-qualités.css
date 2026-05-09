@@ -379,6 +379,76 @@ body {
     flex-shrink: 0;
 }
 
+/* ================= DOCUMENTS OBLIGATOIRES ================= */
+.documents {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.documents-section h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.documents-section h4 {
+    text-align: center;
+}
+
+.documents-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.document-card {
+    padding: 30px;
+    margin: 10px 10px 10px 10px;
+
+    width: 450px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.document-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(37, 99, 235, 0.1);
+    border-color: #2563eb;
+}
+
+.document-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #111827;
+}
+
+.document-card p {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 20px;
+    min-height: 40px;
+}
+
+.document-card a {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.document-card a:hover {
+    background: #1d4ed8;
+}
+
 /* ================= CTA FINAL ================= */
 .cta-final {
     padding: 40px 10px;
@@ -402,18 +472,13 @@ body {
 
 /* ================= FOOTER ================= */
 footer {
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr); */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     text-align: center;
     padding: 20px;
     font-size: 14px;
     color: white;
     background: black;
-}
-
-footer a {
-    text-decoration: none;
-    color: white;
 }
 
 /* ================= RESPONSIVE ================= */
@@ -431,5 +496,19 @@ footer a {
     .navbar nav {
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .documents-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .documents-container {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
     }
 }
