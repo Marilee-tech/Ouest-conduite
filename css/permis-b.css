@@ -125,6 +125,32 @@ body {
     color: #00007f;
 }
 
+.about-text p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #6b7280;
+}
+
+.about-text ul {
+    list-style: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.about-text li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #6b7280;
+}
+
+.about-text li:before {
+    content: "✓ ";
+    color: #2563eb;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
 .cta-box {
     background: #f3f4f6;
     padding: 30px;
